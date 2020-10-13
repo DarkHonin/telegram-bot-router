@@ -9,6 +9,10 @@
 const Command = require("./command")
 
 module.exports = class {
+	/** Message
+	 * @param {string} msg
+	 * @param {key : any} params
+	 */
 	constructor(msg, params = {}){
 		this.msg = msg
 		var parts = msg.split(' ')
@@ -21,7 +25,10 @@ module.exports = class {
 		this.commandDigest = undefined
 	}
 
-	getCommand(){
+	/**
+	 * @property {Command}
+	 */
+	get command(){
 		if(this.commandDigest) return this.commandDigest
 		this.commandDigest = new Command(this.command)
 		return this.commandDigest

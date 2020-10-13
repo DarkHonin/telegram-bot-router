@@ -1,14 +1,19 @@
 module.exports = class {
+	/** Command
+	 * @param {string} commandRaw : The raw first piece of the message /this.that.hello
+	 */
 	constructor(commandRaw){
-		// Clean and stuff
+		// todo: clean?
 
 		this.command = commandRaw;
-		this.pieces = this.command.split('-')
+		this.pieces = this.command.split('.')
 		this.index = 0
 	}
 
-	// get next command
-	next(){
+	/**
+	 * @property
+	 */
+	get next(){
 		if(this.index >= this.pieces.length) return '.'
 		var ret = this.pieces[this.index]
 		this.index++

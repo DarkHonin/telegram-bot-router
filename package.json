@@ -1,0 +1,24 @@
+{
+  "name": "telegram_bot_router",
+  "version": "1.0.0",
+  "description": "An attempt at a command line interface bot for telegram",
+  "main": "index.js",
+  "scripts": {
+    "test": "?"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarkHonin/telegram-bot-router.git"
+  },
+  "keywords": [
+    "bot",
+    "telegram",
+    "router"
+  ],
+  "author": "Honin",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/DarkHonin/telegram-bot-router/issues"
+  },
+  "homepage": "https://github.com/DarkHonin/telegram-bot-router#readme"
+}
