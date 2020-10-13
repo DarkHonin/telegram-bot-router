@@ -4,12 +4,14 @@ module.exports = class {
 	 * abstract class
 	 *
 	 * @param {string} route_id	: Route string id /this.{route_id}.hello
+	 * @param {(msg, next = ()=>[]) =>{}} dispatch
 	 * @function dispatch
 	 *
 	 * Scafold for route/router objects
 	 */
-	constructor(route_id){
+	constructor(route_id, dispatch = undefined){
 		this.route_id = route_id
+		if(dispatch !== undefined) this.dispatch = dispatch
 	}
 
 	/**Dispatch

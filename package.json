@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/DarkHonin/telegram-bot-router/issues"
   },
-  "homepage": "https://github.com/DarkHonin/telegram-bot-router#readme"
+  "homepage": "https://github.com/DarkHonin/telegram-bot-router#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.50.0"
+  }
 }
