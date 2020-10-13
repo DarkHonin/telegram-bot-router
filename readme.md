@@ -25,7 +25,7 @@ I don't know how to implement this yet but I want it to be:
 			... params go here ...
 		}
 
-		const bot = botRouter()
+		const bot = botRouter(params, routs)
 
 ---
 
